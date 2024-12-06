@@ -1,21 +1,23 @@
 import Image from "next/image";
 
-const StayConnectedSection = () => {
+const StayConnected = () => {
   return (
     <div className="bg-blue-500 text-white py-8">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
-        <div className="text-lg">
+      <div className="max-w-[1396px] mx-auto flex justify-between items-center px-6">
+        {/* Left content: Text */}
+        <div className="w-[536px]">
           <h2 className="text-xl font-bold">Stay connected with us.</h2>
           <p>Some text here on the left</p>
         </div>
-        <div className="relative w-1/4">
+
+        {/* Right content: Dog Image */}
+        <div className="w-[404px] md:w-[120px] relative">
           <Image
-            src="/path/to/dog-image.jpg" // Change this to your actual image path
-            alt="Dog Image"
-            layout="intrinsic"
-            width={200} // You can adjust this width as needed
-            height={200} // Adjust the height according to the image aspect ratio
-            className="absolute right-0 bottom-0"
+            src="/images/pet.png"
+            alt="Pet"
+            width={404}  // You can adjust the width as needed for different screens
+            height={200}
+            className="w-full h-auto"
           />
         </div>
       </div>
@@ -23,4 +25,4 @@ const StayConnectedSection = () => {
   );
 };
 
-export default StayConnectedSection;
+export default StayConnected;
