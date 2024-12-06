@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: red;
   --foreground: #171717;
 }
 
@@ -13,9 +13,34 @@
     --foreground: #ededed;
   }
 } */
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #112025;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #112025;
+}
+
+p {
+  font-size: 1rem;
+  color: #666666;
+}
+
+a {
+  color: #112025;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  font-size: 1rem;
+  color: #112025;
 }
