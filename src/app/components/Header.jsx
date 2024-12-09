@@ -1,13 +1,48 @@
 import React from 'react';
+import Slider from 'react-slick';
 
 const Header = () => {
+
+  const NextArrow = (props) => {
+    const { className, onClick } = props;
+    return (
+      <div
+        className={`${className}`}
+        onClick={onClick}
+      >
+        <img src='/images/right-arrow.png' alt='Next' />
+      </div>
+    );
+  }
+
+  const PrevArrow = (props) => {
+    const { className, onClick } = props;
+    return (
+      <div
+        className={`${className}`}
+        onClick={onClick}
+      >
+        <img src='/images/left-arrow.png' alt='Previous' />
+      </div>
+    );
+  }
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
 
   const SearchInput = ({ inputClass }) => {
     return (
       <div className='relative'>
         <input
           placeholder='search for product'
-          className={`pl-[50px] p-[14px] bg-[#EFF0F4]  border border-solid border-[#112025] placeholder:text-[#112025] text-[16px] font-semibold ${inputClass}`}
+          className={`pl-[50px] p-[14px] bg-[#EFF0F4] border placeholder:text-[#112025] opacity-50 text-[16px] font-semibold ${inputClass}`}
         />
         <img
           src='/images/search.png'
@@ -17,9 +52,26 @@ const Header = () => {
     );
   };
 
+  const sliderData = [
+    { text: 'Free same-day delivery on orders $35+ when you order by 2PM.' },
+    { text: 'Free same-day delivery on orders $35+ when you order by 2PM.' },
+    { text: 'Free same-day delivery on orders $35+ when you order by 2PM.' },
+  ];
+
   return (
     <div>
-      <div className='bg-[#195F6B]'>slider</div>
+      <div className='bg-[#195F6B] slider-container overflow-hidden header-slider'>
+        <Slider {...settings}>
+          {sliderData.map((item, index) => (
+            <div
+              key={index}
+              className='text-center font-semibold text-[8px] md:text-[14px] text-[#EFF0F4] my-1'
+            >
+              {item.text}
+            </div>
+          ))}
+        </Slider>
+      </div>
 
       <div className='hidden md:block bg-[#FAFFFF] justify-between '>
         <div className='flex justify-between items-center mx-20 py-5'>
