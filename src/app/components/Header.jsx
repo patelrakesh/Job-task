@@ -65,7 +65,7 @@ const Header = () => {
           {sliderData.map((item, index) => (
             <div
               key={index}
-              className='text-center font-semibold text-[8px] md:text-[14px] text-[#EFF0F4] my-1'
+              className='text-center font-semibold text-[8px] lg:text-[14px] text-[#EFF0F4] my-1'
             >
               {item.text}
             </div>
@@ -73,7 +73,7 @@ const Header = () => {
         </Slider>
       </div>
 
-      <div className='hidden md:block bg-[#FAFFFF] justify-between '>
+      <div className='hidden lg:block bg-[#FAFFFF] justify-between '>
         <div className='flex justify-between items-center mx-20 py-5'>
           <div className='flex items-center gap-10'>
             <img src='/images/Logo.png' />
@@ -114,7 +114,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className='flex md:hidden flex-col items-center p-5 gap-5 bg-[#FAFFFF]'>
+      <div className='flex lg:hidden flex-col items-center p-5 gap-5 bg-[#FAFFFF]'>
         <div className='w-full flex justify-between items-center'>
           <img src='/images/user.png' className='w-4 text-white' />
           <img src='/images/Logo.png' />

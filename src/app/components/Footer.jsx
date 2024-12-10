@@ -46,7 +46,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="hidden absolute bottom-[-430px] bg-[url('/images/footerbg.png')] pt-[100px] bg-no-repeat bg-cover bg-center md:block">
+      <div className="hidden absolute bottom-[-430px] bg-[url('/images/footerbg.png')] pt-[100px] bg-no-repeat bg-cover bg-center lg:block">
         <div className='px-20 py-12 flex justify-between items-start'>
           <div className='flex flex-col gap-4 w-1/4'>
             <img src='/images/Logo.png' className='w-[250px]' />
@@ -111,7 +111,7 @@ const Footer = () => {
         <Test mainDivClass='text-[12px]' />
       </div>
 
-      <div className="block md:hidden absolute bottom-[-330px] bg-[url('/images/footer-mobile-bg.png')] pt-[100px] bg-no-repeat bg-cover ">
+      <div className="block lg:hidden absolute bottom-[-330px] md:bottom-[-360px] w-full bg-[url('/images/footer-mobile-bg.png')] pt-[100px] md:pt-[150px] bg-no-repeat bg-cover ">
         <div className='px-5 flex flex-col gap-5'>
           <div className='flex flex-col gap-2.5'>
             <img src='/images/Logo.png' className='w-[120px]' />
@@ -163,7 +163,7 @@ const Footer = () => {
 
             <button
               onClick={() => setShowPetFood(!showPetFood)}
-              className='w-full flex justify-between items-center bg-white border rounded-[8px] text-[#195F6B] text-[12px] font-bold px-2.5 border-none'
+              className='w-full flex justify-between items-center bg-white border rounded-[8px] text-[#195F6B] text-[12px] font-bold p-2.5 border-none'
             >
               <span>Pet Wise Food</span>
               <span className='font-semibold text-lg'>

@@ -51,7 +51,7 @@ const CategoryItem = () => {
   );
 
   const AccessoriesFoodComboCard = () => (
-    <div className="flex flex-col items-start gap-5 bg-[url('/images/dog-food-and-leash.png')] w-full h-full min-h-[290px] md:min-h-[540px] bg-cover p-5 rounded-[8px]">
+    <div className="flex flex-col items-start gap-5 bg-[url('/images/dog-food-and-leash.png')] w-full h-full min-h-[290px] lg:min-h-[540px] bg-cover p-5 rounded-[8px]">
       <div className='flex flex-col gap-2.5'>
         <span className='font-medium text-[12px] text-[#112025]'>
           Accessories + Food Combo
@@ -65,7 +65,7 @@ const CategoryItem = () => {
   );
 
   const PeanutButterCookiesCard = () => (
-    <div className='w-full bg-[#FDC161] rounded-[8px] flex flex-col justify-center items-center text-center pt-5 min-h-[290px] md:min-h-[500px]'>
+    <div className='w-full bg-[#FDC161] rounded-[8px] flex flex-col justify-center items-center text-center pt-5 min-h-[290px] lg:min-h-[500px]'>
       <div className='flex flex-col gap-2.5 items-center'>
         <span className='font-semibold text-[16px] text-[#112025] capitalize max-w-[150px]'>
           peanut butter cookies
@@ -78,7 +78,7 @@ const CategoryItem = () => {
       <img
         src='/images/peanut-butter.png'
         alt=''
-        className='h-[120px] md:h-[330px]'
+        className='h-[120px] lg:h-[330px]'
       />
     </div>
   );
@@ -96,13 +96,13 @@ const CategoryItem = () => {
         </div>
         <OrderNowButton btnClass='rounded-full' />
       </div>
-      <img src={image} alt='' className='w-[150px] md:w-auto' />
+      <img src={image} alt='' className='w-[150px] lg:w-auto' />
     </div>
   );
 
   const DogContent = () => (
     <>
-      <div className='hidden md:flex gap-2.5'>
+      <div className='hidden lg:flex gap-2.5'>
         <AccessoriesFoodComboCard />
         <PeanutButterCookiesCard />
         <div className='w-full flex flex-col gap-2.5'>
@@ -116,7 +116,7 @@ const CategoryItem = () => {
           />
         </div>
       </div>
-      <div className='block md:hidden'>
+      <div className='block lg:hidden'>
         <Slider {...settings}>
           <AccessoriesFoodComboCard />
           <PeanutButterCookiesCard />
@@ -146,25 +146,25 @@ const CategoryItem = () => {
   ];
 
   return (
-    <div className='mx-0 md:mx-20 flex justify-center items-center flex-col gap-5 py-10'>
-      <div className='flex flex-col items-center justify-center text-center gap-2.5 max-w-full md:max-w-[450px] !text-[#112025]'>
-        <span className='text-[10px] md:text-[16px] font-medium uppercase opacity-50'>
+    <div className='mx-0 lg:mx-20 flex justify-center items-center flex-col gap-5 py-10'>
+      <div className='flex flex-col items-center justify-center text-center gap-2.5 max-w-full lg:max-w-[450px] !text-[#112025]'>
+        <span className='text-[10px] lg:text-[16px] font-medium uppercase opacity-50'>
           based on veterinary doctor's
         </span>
-        <span className='text-[16px] md:text-[30px] font-medium mx-8 md:mx-0'>
+        <span className='text-[16px] lg:text-[30px] font-medium mx-8 lg:mx-0'>
           some of our favorites to care for their whole health
         </span>
       </div>
 
       <div className='w-full mx-10'>
-        <div className='flex justify-between md:border px-5 md:px-10 py-2.5 overflow-auto w-full gap-2.5'>
+        <div className='flex justify-between lg:border px-5 lg:px-10 py-2.5 overflow-auto w-full gap-2.5'>
           {tabData.map((tab, index) => (
             <button
               key={index}
-              className={`flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-2.5 py-2 px-6 md:px-4 text-[10px] md:text-[16px] font-medium focus:outline-none uppercase rounded-[24px] md:rounded-full ${
+              className={`flex flex-col lg:flex-row items-center justify-center gap-1.5 lg:gap-2.5 py-2 px-6 lg:px-4 text-[10px] lg:text-[16px] font-medium focus:outline-none uppercase rounded-[24px] lg:rounded-full ${
                 activeTab === index
                   ? 'text-white bg-[#112025]'
-                  : 'bg-[#EFF0F4] md:bg-white'
+                  : 'bg-[#EFF0F4] lg:bg-white'
               }`}
               onClick={() => setActiveTab(index)}
             >

@@ -12,8 +12,8 @@ const StayConnected = () => {
 
   return (
     <>
-      <div className='flex gap-2.5 bg-[#EFF0F4] mx-5 md:mx-40 p-5 md:py-10 md:px-20 rounded-[20px] relative'>
-        <div className='flex flex-col gap-5 max-w-full md:max-w-[45%] pb-[280px] md:pb-40'>
+      <div className='flex gap-2.5 bg-[#EFF0F4] mx-5 lg:mx-40 p-5 lg:py-10 lg:px-20 rounded-[20px] relative'>
+        <div className='flex flex-col gap-5 max-w-full lg:max-w-[45%] pb-[280px] lg:pb-40'>
           <div className='flex flex-col gap-2.5'>
             <span className='font-medium text-[30px] text-black'>
               Stay connected with us.
@@ -24,7 +24,7 @@ const StayConnected = () => {
             </span>
           </div>
 
-          <div className='hidden md:flex justify-between'>
+          <div className='hidden lg:flex justify-between'>
             {checkBoxData.map((item, index) => (
               <div key={index} className='flex items-center gap-2.5'>
                 <input type='checkbox' />
@@ -35,7 +35,7 @@ const StayConnected = () => {
             ))}
           </div>
 
-          <div className='grid md:hidden grid-cols-3 gap-y-2.5'>
+          <div className='grid lg:hidden grid-cols-3 gap-y-2.5'>
             {checkBoxData.map((item, index) => (
               <div key={index} className='flex items-center gap-1.5'>
                 <input type='checkbox' />
@@ -46,7 +46,7 @@ const StayConnected = () => {
             ))}
           </div>
 
-          <div className='relative max-w-full md:max-w-[70%]'>
+          <div className='relative max-w-full lg:max-w-[70%]'>
             <input
               type='text'
               placeholder='Signup for Newsletter'
@@ -60,7 +60,7 @@ const StayConnected = () => {
         <img
           src='/images/pet.png'
           alt=''
-          className='absolute bottom-[80px]  md:bottom-0 right-5 md:right-10 w-[200px] h-[200px] md:w-auto md:h-auto'
+          className='absolute bottom-[80px] md:bottom-[80px] lg:bottom-0 right-5 md:right-20 lg:right-10 w-[200px] h-[200px] lg:w-auto lg:h-auto'
         />
       </div>
     </>
