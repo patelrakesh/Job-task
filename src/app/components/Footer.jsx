@@ -1,100 +1,207 @@
-import Image from "next/image";
+import React, {useState} from 'react'
 
 const Footer = () => {
+  const [showServices, setShowServices] = useState(false);
+  const [showPetFood, setShowPetFood] = useState(false);
+
+  const ourService = [
+    'Track order',
+    'returns',
+    'Shipping Info',
+    'Certificates',
+  ];
+
+  const petWiseFood = [
+    'Dog',
+    'cat',
+    'mammals',
+    'hamsters',
+    'Eagle',
+    'owl',
+    'gold fish',
+  ];
+
+  const socialMedia = [
+    { img: '/images/facebook-icon.png' },
+    { img: '/images/twitter-icon.png' },
+    { img: '/images/instagram-icon.png' },
+    { img: '/images/linkedin-icon.png' },
+  ];
+
+  const Test = ({ mainDivClass }) => (
+    <div
+      className={`bg-[#195F6B] text-white text-center py-4 ${mainDivClass}`}
+    >
+      <div className='flex justify-center space-x-6'>
+        <span className='cursor-pointer hover:underline'>Privacy Policy</span>
+        <span className='cursor-pointer hover:underline w-[1px] bg-white'></span>
+        <span className='cursor-pointer hover:underline'>T & C</span>
+        <span className='cursor-pointer hover:underline w-[1px] bg-white'></span>
+        <span className='cursor-pointer hover:underline'>FAQ</span>
+        <span className='cursor-pointer hover:underline w-[1px] bg-white'></span>
+        <span className='cursor-pointer hover:underline'>Return Policy</span>
+      </div>
+    </div>
+  );
+
   return (
-    <div className="py-12 relative bg-[url('/images/footerbg.png')] relative pt-[100px] bg-no-repeat bg-cover bg-center z-[99999]">
-      {/* Footer Content */}
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Left Section: Logo and Description */}
-        <div className="flex justify-between items-start text-white">
-          <div className="w-1/4">
-            <div className="flex items-center space-x-2">
-              <Image
-                src="/images/logo.png" // Path to your logo image in the public folder
-                alt="Logo"
-                width={50} // Adjust the size as needed
-                height={50} // Adjust the size as needed
-              />
-              <span className="text-xl font-bold">Company Name</span>
+    <>
+      <div className="hidden absolute bottom-[-430px] bg-[url('/images/footerbg.png')] pt-[100px] bg-no-repeat bg-cover bg-center md:block">
+        <div className='px-20 py-12 flex justify-between items-start'>
+          <div className='flex flex-col gap-4 w-1/4'>
+            <img src='/images/Logo.png' className='w-[250px]' />
+            <span className='text-[#195F6B] font-medium text-[12px]'>
+              © 2021 PetStore. All Rights Reserved.
+            </span>
+            <span className='font-normal text-[14px] opacity-80 mt-5 opacity-50'>
+              Egestas nec etiam maecenas aliquam a, lorem ornare eget non nec
+              placerat elit a enim fermentum ac integer eget ante mattis cursus
+              purus volutpat
+            </span>
+            <div className='flex items-center gap-2.5 font-semibold text-[16px]'>
+              <img src='/images/mail.png' alt='' className='w-5 h-4' />
+              <span>sayhi@dubidoo.com</span>
             </div>
-            <p className="text-sm mt-4">
-              Short description about the company or service. Something catchy.
-            </p>
+            <div className='flex gap-2.5 text-[16px]'>
+              <img src='/images/phone.png' alt='' className='w-5 h-4' />
+              <span>(252) 555-0126</span>
+            </div>
           </div>
-
-          {/* Middle Section: Links */}
-          <div className="w-1/4">
-            <h3 className="font-semibold text-lg">Our Services</h3>
-            <ul className="space-y-1 text-sm">
-              <li><a href="/service1" className="hover:underline">Service 1</a></li>
-              <li><a href="/service2" className="hover:underline">Service 2</a></li>
-              <li><a href="/service3" className="hover:underline">Service 3</a></li>
-            </ul>
-
-            <h3 className="font-semibold text-lg mt-6">Pet-wise Food</h3>
-            <ul className="space-y-1 text-sm">
-              <li><a href="/pet-food1" className="hover:underline">Pet Food 1</a></li>
-              <li><a href="/pet-food2" className="hover:underline">Pet Food 2</a></li>
-              <li><a href="/pet-food3" className="hover:underline">Pet Food 3</a></li>
-            </ul>
+          <div className='flex flex-col gap-2.5'>
+            <span className='text-[#195F6B] font-bold text-[22px]'>
+              Our Service
+            </span>
+            <div className='flex flex-col gap-1'>
+              {ourService.map((item, index) => (
+                <span
+                  key={index}
+                  className=' font-medium text-[16px] opacity-50'
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
-
-          {/* Right Section: Social Media Links */}
-          <div className="w-1/4">
-            <h3 className="font-semibold text-lg">Follow Us</h3>
-            <div className="flex space-x-4 mt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/images/facebook-icon.png" // Path to the Facebook icon in the public folder
-                  alt="Facebook"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/images/twitter-icon.png" // Path to the Twitter icon in the public folder
-                  alt="Twitter"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/images/instagram-icon.png" // Path to the Instagram icon in the public folder
-                  alt="Instagram"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/images/linkedin-icon.png" // Path to the LinkedIn icon in the public folder
-                  alt="LinkedIn"
-                  width={24}
-                  height={24}
-                />
-              </a>
+          <div className='flex flex-col gap-2.5'>
+            <span className='text-[#195F6B] font-bold text-[22px]'>
+              pet wise food
+            </span>
+            <div className='grid grid-rows-5 grid-flow-col gap-y-1 gap-x-20'>
+              {petWiseFood.map((item, index) => (
+                <span
+                  key={index}
+                  className=' font-medium text-[16px] opacity-50'
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className='flex flex-col gap-2.5'>
+            <span className='text-[#195F6B] font-bold text-[22px]'>
+              social media
+            </span>
+            <div className='flex gap-1 justify-between'>
+              {socialMedia.map((item, index) => (
+                <img key={index} src={item.img} alt='' />
+              ))}
             </div>
           </div>
         </div>
+        <Test mainDivClass='text-[12px]' />
       </div>
 
-      {/* <div className="bg-green-500 py-12 relative">
-        <div className="max-w-7xl mx-auto px-4">
-          <p className="text-white text-center">Footer Content</p>
+      <div className="block md:hidden absolute bottom-[-330px] bg-[url('/images/footer-mobile-bg.png')] pt-[100px] bg-no-repeat bg-cover ">
+        <div className='px-5 flex flex-col gap-5'>
+          <div className='flex flex-col gap-2.5'>
+            <img src='/images/Logo.png' className='w-[120px]' />
+            <span className='text-[#195F6B] font-medium text-[8px]'>
+              © 2021 PetStore. All Rights Reserved.
+            </span>
+          </div>
+          <span className='font-normal text-[10px] opacity-80'>
+            Egestas nec etiam maecenas aliquam a, lorem ornare eget non nec
+            placerat elit a enim fermentum ac integer eget ante mattis cursus
+            purus volutpat
+          </span>
+          <div className='flex flex-col gap-2.5'>
+            <span className='text-[#195F6B] font-bold text-[12px]'>
+              social media
+            </span>
+            <div className='flex gap-2.5'>
+              {socialMedia.map((item, index) => (
+                <img key={index} src={item.img} alt='' />
+              ))}
+            </div>
+          </div>
+          <div className='flex flex-col gap-2.5'>
+            <button
+              onClick={() => setShowServices(!showServices)}
+              className='w-full flex justify-between items-center bg-white border rounded-[8px] text-[#195F6B] text-[12px] font-bold p-2.5 border-none'
+            >
+              <span>Our Service</span>
+              <span className='font-semibold text-lg'>
+                {showServices ? (
+                  '-'
+                ) : (
+                  <img src='/images/plus.png' className='w-2.5 h-2.5' />
+                )}
+              </span>
+            </button>
+            {showServices && (
+              <div className='flex flex-col gap-2 bg-white'>
+                {ourService.map((item, index) => (
+                  <span
+                    key={index}
+                    className=' font-medium text-[12px] opacity-50 px-2.5 uppercase'
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            <button
+              onClick={() => setShowPetFood(!showPetFood)}
+              className='w-full flex justify-between items-center bg-white border rounded-[8px] text-[#195F6B] text-[12px] font-bold px-2.5 border-none'
+            >
+              <span>Pet Wise Food</span>
+              <span className='font-semibold text-lg'>
+                {showPetFood ? (
+                  '-'
+                ) : (
+                  <img src='/images/plus.png' className='w-2.5 h-2.5' />
+                )}
+              </span>
+            </button>
+            {showPetFood && (
+              <div className='flex flex-col gap-2 bg-white'>
+                {petWiseFood.map((item, index) => (
+                  <span
+                    key={index}
+                    className=' font-medium text-[12px] opacity-50 px-2.5 uppercase'
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+          <div className='flex justify-center gap-5 pb-5'>
+            <div className='flex gap-2.5 font-medium text-[10px]'>
+              <img src='/images/mail.png' alt='' />
+              <span>sayhi@dubidoo.com</span>
+            </div>
+            <div className='w-0.5 bg-black' />
+            <div className='flex gap-2.5 font-medium text-[10px]'>
+              <img src='/images/phone.png' alt='' />
+              <span>(252) 555-0126</span>
+            </div>
+          </div>
         </div>
-        <div className="absolute bottom-0 left-0 w-full">
-          <Image
-            src="/images/footerbg.png"
-            alt="Curve Image"
-            layout="responsive"
-            width={1920}
-            height={300}
-          />
-        </div>
-      </div> */}
-    </div>
+        <Test mainDivClass='text-[8px]' />
+      </div>
+    </>
   );
 };
 

@@ -77,7 +77,24 @@ const Header = () => {
         <div className='flex justify-between items-center mx-20 py-5'>
           <div className='flex items-center gap-10'>
             <img src='/images/Logo.png' />
-            <div>dropdown</div>
+            <div className='flex gap-5'>
+              <span className='flex items-center gap-2 text-[22px] font-semibold'>
+                Pets Food
+                <img
+                  src='/images/arrowDown.png'
+                  alt=''
+                  className='w-3 h-2.5'
+                />
+              </span>
+              <span className='flex items-center gap-2 text-[22px] font-semibold'>
+                Accessories
+                <img
+                  src='/images/arrowDown.png'
+                  alt=''
+                  className='w-3 h-2.5'
+                />
+              </span>
+            </div>
           </div>
           <div className='flex items-center gap-2.5'>
             <SearchInput inputClass='rounded-lg' />
