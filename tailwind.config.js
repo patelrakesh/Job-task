@@ -14,7 +14,13 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('/img/hero-pattern.svg')",
         'footer-texture': "url('/images/footerbg.png')",
-      }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      letterSpacing: {
+        '2percent': '2%', 
+      },
     },
   },
   plugins: [],
