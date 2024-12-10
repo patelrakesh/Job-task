@@ -4,7 +4,7 @@ const InstagramSection = () => {
   const posts = [
     {
       id: 1,
-      image: "/images/fluffy-dog-in-orange-pajamas.png",
+      image: "/images/instagram-section-fluffy-dog.png",
       caption:
         "Simply tag @petfood in your caption on Instagram or Twitter to be featured on our website.",
       user: "Instagram User",
@@ -15,14 +15,14 @@ const InstagramSection = () => {
       text: "I Think Having An Animal In Your Life Makes You A Better Human.",
       user: "Instagram User",
       time: "48 min ago",
-      icon: "/images/heart_fill.png",
-      image: "/images/puppy-in-duck-pajamas.png",
+      icon: "/images/Instagram-heart_fill.png",
+      image: "/images/Instagram-puppy-in-duck-pajamas.png",
       caption:
         "Simply tag @petfood in your caption on Instagram or Twitter to be featured on our website.",
     },
     {
       id: 3,
-      image: "/images/dog-bone-treats-in-bowl.png",
+      image: "/images/instagram-dog-bone.png",
       caption:
         "Simply tag @petfood in your caption on Instagram or Twitter to be featured on our website.",
       user: "Instagram User",
@@ -30,7 +30,7 @@ const InstagramSection = () => {
     },
     {
       id: 4,
-      image: "/images/puppies-in-pajamas.png",
+      image: "/images/instagram-puppies-in-pajamas.png",
       caption:
         "Simply tag @petfood in your caption on Instagram or Twitter to be featured on our website.",
       user: "Instagram User",
@@ -98,7 +98,7 @@ const InstagramSection = () => {
                   <div className="flex items-center justify-between text-gray-400 text-xs p-2">
                     <InstagramUserTime user={post.user} time={post.time} />
                     <Image
-                      src="/images/instagram-color.png"
+                      src="/images/instagram-section.png"
                       alt="Instagram Icon"
                       width={30}
                       height={30}
@@ -154,7 +154,7 @@ const InstagramSection = () => {
                   <div className="flex items-center justify-between text-gray-400 text-xs">
                     <InstagramUserTime user={post.user} time={post.time} />
                     <Image
-                      src="/images/instagram-color.png"
+                      src="/images/instagram-section.png"
                       alt="Instagram Icon"
                       width={30}
                       height={30}
