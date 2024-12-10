@@ -80,8 +80,8 @@ const InstagramSection = () => {
                 className="flex flex-col justify-between min-w-[300px] lg:min-w-[226px]"
               >
                 {/* First Card */}
-                <div className="bg-white shadow-sm rounded-md overflow-hidden hover:shadow-lg hover:border hover:border-slate-300 hover:bg-slate-50 transition-all duration-300">
-                  <div className="bg-[#16BAC6] bg-opacity-10 flex flex-col justify-center items-center text-center p-6 rounded-md shadow-sm">
+                <div className="bg-white shadow-sm rounded-md overflow-hidden hover:shadow-xl  transition-all duration-300">
+                  <div className="bg-[#16BAC6] bg-opacity-10 flex flex-col justify-center items-center text-center p-6 rounded-md shadow-sm border border-slate-300">
                     {post.icon && (
                       <Image
                         src={post.icon}
@@ -108,7 +108,7 @@ const InstagramSection = () => {
                 </div>
   
                 {/* Second Card */}
-                <div className="bg-white shadow-sm rounded-md overflow-hidden hover:shadow-lg hover:border hover:border-slate-300 hover:bg-slate-50 transition-all duration-300">
+                <div className="bg-white shadow-sm rounded-md overflow-hidden hover:shadow-xl hover:border hover:border-slate-300 hover:bg-slate-50 transition-all duration-300">
                   <Image
                     src={post.image}
                     alt="Dog Image"
@@ -133,7 +133,7 @@ const InstagramSection = () => {
             ) : (
               <div
                 key={post.id}
-                className="bg-white shadow-sm rounded-md overflow-hidden hover:shadow-lg hover:border hover:border-slate-300 transition-all duration-300 min-w-[300px] lg:min-w-[226px]"
+                className="bg-white shadow-sm rounded-md overflow-hidden hover:shadow-xl hover:border hover:border-slate-300 transition-all duration-300 min-w-[300px] lg:min-w-[226px]"
               >
                 {post.image && (
                   <Image
