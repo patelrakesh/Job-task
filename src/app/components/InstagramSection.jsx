@@ -77,7 +77,7 @@ const InstagramSection = () => {
             index === 1 ? (
               <div
                 key={post.id}
-                className="flex flex-col gap-2 justify-between min-w-[300px] lg:min-w-[226px]"
+                className="flex flex-col justify-between min-w-[300px] lg:min-w-[226px]"
               >
                 {/* First Card */}
                 <div className="bg-white shadow-sm rounded-md overflow-hidden hover:shadow-lg hover:border hover:border-slate-300 hover:bg-slate-50 transition-all duration-300">
