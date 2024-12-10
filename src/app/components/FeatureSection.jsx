@@ -38,8 +38,8 @@ const FeaturesSection = () => {
           />
         </div>
 
-        <h3 className="text-lg font-semibold mb-2 mt-2">{title}</h3>
-        <p className="text-[#666666] text-sm sm:text-sm md:text-base font-poppins tracking-[2%]">
+        <h3 className="md:text-[20px] text-[14px] font-semibold mb-2 mt-2">{title}</h3>
+        <p className="text-[#666666] text-[12px] md:text-[16px] font-poppins tracking-[2%]">
           {description}
         </p>
       </div>

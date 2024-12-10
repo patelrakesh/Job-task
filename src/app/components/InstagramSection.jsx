@@ -53,18 +53,18 @@ const InstagramSection = () => {
 
   const InstagramUserTime = ({ user, time }) => (
     <div className="flex flex-col items-start">
-      <span className="text-[#112025] text-sm font-poppins font-bold">
+      <span className="text-[#112025] text-[16px] font-poppins font-bold mb-1">
         {user}
       </span>
-      <span className="text-gray-400 text-xs">{time}</span>
+      <span className="text-gray-400 text-[12px]">{time}</span>
     </div>
   );
 
   return (
     <div className="p-5 bg-gray-50">
     <div className="max-w-screen-xl mx-auto pt-[6rem] pb-[4rem]">
-      <h2 className="text-center text-3xl font-bold mb-4">Explore #Dubidoo</h2>
-      <p className="text-[#112025] text-sm mb-4 font-poppins text-center max-w-[450px] mx-auto">
+      <h2 className="text-center md:text-[30px] text-[16px] font-bold mb-4">Explore #Dubidoo</h2>
+      <p className="text-[#112025] text-[12px] md:text-[14px]  mb-4 font-poppins text-center max-w-[450px] mx-auto">
         {boldAtUsernames(
           "Simply tag @petfood in your caption on Instagram or Twitter to be featured on our website."
         )}
@@ -72,12 +72,12 @@ const InstagramSection = () => {
   
       {/* Posts Container */}
       <div className="overflow-x-auto lg:overflow-hidden mt-8">
-        <div className="flex lg:grid lg:grid-cols-4 gap-6">
+        <div className="flex gap-4 lg:grid lg:grid-cols-4">
           {posts.map((post, index) =>
             index === 1 ? (
               <div
                 key={post.id}
-                className="flex flex-col gap-4 justify-between min-w-[300px] lg:min-w-[226px]"
+                className="flex flex-col gap-2 justify-between min-w-[300px] lg:min-w-[226px]"
               >
                 {/* First Card */}
                 <div className="bg-white shadow-sm rounded-md overflow-hidden hover:shadow-lg hover:border hover:border-slate-300 hover:bg-slate-50 transition-all duration-300">
@@ -91,7 +91,7 @@ const InstagramSection = () => {
                         className="mb-2"
                       />
                     )}
-                    <p className="text-[#195F6B] font-semibold xl:text-[19px] lg:text-[17px] mb-4 font-poppins">
+                    <p className="text-[#195F6B] font-semibold md:text-[17px] text-[14px] mb-4 font-poppins">
                       {`"${post.text}"`}
                     </p>
                   </div>
@@ -117,9 +117,6 @@ const InstagramSection = () => {
                     className="w-full h-auto object-cover"
                   />
                   <div className="p-2">
-                    <p className="text-[#112025] text-sm mb-4 font-poppins">
-                      {boldAtUsernames(post.caption)}
-                    </p>
                     <div className="flex items-center justify-between text-gray-400 text-xs">
                       <InstagramUserTime user={post.user} time={post.time} />
                       <Image
@@ -148,7 +145,7 @@ const InstagramSection = () => {
                   />
                 )}
                 <div className="p-2">
-                  <p className="text-[#112025] text-sm mb-4 font-poppins">
+                  <p className="text-[#112025] text-[12px] md:text-[14px] mb-4 font-poppins">
                     {boldAtUsernames(post.caption)}
                   </p>
                   <div className="flex items-center justify-between text-gray-400 text-xs">
