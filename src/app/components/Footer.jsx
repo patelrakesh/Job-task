@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 
 const Footer = () => {
   const [showServices, setShowServices] = useState(false);
@@ -29,9 +29,7 @@ const Footer = () => {
   ];
 
   const Test = ({ mainDivClass }) => (
-    <div
-      className={`bg-[#195F6B] text-white text-center py-4 ${mainDivClass}`}
-    >
+    <div className={`bg-[#195F6B] text-white text-center py-4 ${mainDivClass}`}>
       <div className='flex justify-center space-x-6'>
         <span className='cursor-pointer hover:underline'>Privacy Policy</span>
         <span className='cursor-pointer hover:underline w-[1px] bg-white'></span>
@@ -50,19 +48,19 @@ const Footer = () => {
         <div className='px-20 py-12 flex justify-between items-start'>
           <div className='flex flex-col gap-4 w-1/4'>
             <img src='/images/Logo.png' className='w-[250px]' />
-            <span className='text-[#195F6B] font-medium text-[12px]'>
+            <span className='text-[#195F6B] font-medium text-xs'>
               © 2021 PetStore. All Rights Reserved.
             </span>
-            <span className='font-normal text-[14px] opacity-80 mt-5 opacity-50'>
+            <span className='font-normal text-sm mt-5 opacity-50'>
               Egestas nec etiam maecenas aliquam a, lorem ornare eget non nec
               placerat elit a enim fermentum ac integer eget ante mattis cursus
               purus volutpat
             </span>
-            <div className='flex items-center gap-2.5 font-semibold text-[16px]'>
+            <div className='flex items-center gap-2.5 font-semibold text-base'>
               <img src='/images/mail.png' alt='' className='w-5 h-4' />
               <span>sayhi@dubidoo.com</span>
             </div>
-            <div className='flex gap-2.5 text-[16px]'>
+            <div className='flex gap-2.5 text-base'>
               <img src='/images/phone.png' alt='' className='w-5 h-4' />
               <span>(252) 555-0126</span>
             </div>
@@ -73,10 +71,7 @@ const Footer = () => {
             </span>
             <div className='flex flex-col gap-1'>
               {ourService.map((item, index) => (
-                <span
-                  key={index}
-                  className=' font-medium text-[16px] opacity-50'
-                >
+                <span key={index} className=' font-medium text-base opacity-50'>
                   {item}
                 </span>
               ))}
@@ -88,10 +83,7 @@ const Footer = () => {
             </span>
             <div className='grid grid-rows-5 grid-flow-col gap-y-1 gap-x-20'>
               {petWiseFood.map((item, index) => (
-                <span
-                  key={index}
-                  className=' font-medium text-[16px] opacity-50'
-                >
+                <span key={index} className=' font-medium text-base opacity-50'>
                   {item}
                 </span>
               ))}
@@ -108,7 +100,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <Test mainDivClass='text-[12px]' />
+        <Test mainDivClass='text-xs' />
       </div>
 
       <div className="block lg:hidden absolute bottom-[-330px] md:bottom-[-360px] w-full bg-[url('/images/footer-mobile-bg.png')] pt-[100px] md:pt-[150px] bg-no-repeat bg-cover ">
@@ -125,7 +117,7 @@ const Footer = () => {
             purus volutpat
           </span>
           <div className='flex flex-col gap-2.5'>
-            <span className='text-[#195F6B] font-bold text-[12px]'>
+            <span className='text-[#195F6B] font-bold text-xs'>
               social media
             </span>
             <div className='flex gap-2.5'>
@@ -137,7 +129,7 @@ const Footer = () => {
           <div className='flex flex-col gap-2.5'>
             <button
               onClick={() => setShowServices(!showServices)}
-              className='w-full flex justify-between items-center bg-white border rounded-[8px] text-[#195F6B] text-[12px] font-bold p-2.5 border-none'
+              className='w-full flex justify-between items-center bg-white border rounded-lg text-[#195F6B] text-xs font-bold p-2.5 border-none'
             >
               <span>Our Service</span>
               <span className='font-semibold text-lg'>
@@ -153,7 +145,7 @@ const Footer = () => {
                 {ourService.map((item, index) => (
                   <span
                     key={index}
-                    className=' font-medium text-[12px] opacity-50 px-2.5 uppercase'
+                    className=' font-medium text-xs opacity-50 px-2.5 uppercase'
                   >
                     {item}
                   </span>
@@ -163,7 +155,7 @@ const Footer = () => {
 
             <button
               onClick={() => setShowPetFood(!showPetFood)}
-              className='w-full flex justify-between items-center bg-white border rounded-[8px] text-[#195F6B] text-[12px] font-bold p-2.5 border-none'
+              className='w-full flex justify-between items-center bg-white border rounded-lg text-[#195F6B] text-xs font-bold p-2.5 border-none'
             >
               <span>Pet Wise Food</span>
               <span className='font-semibold text-lg'>
@@ -179,7 +171,7 @@ const Footer = () => {
                 {petWiseFood.map((item, index) => (
                   <span
                     key={index}
-                    className=' font-medium text-[12px] opacity-50 px-2.5 uppercase'
+                    className=' font-medium text-xs opacity-50 px-2.5 uppercase'
                   >
                     {item}
                   </span>

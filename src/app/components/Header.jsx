@@ -42,7 +42,7 @@ const Header = () => {
       <div className='relative'>
         <input
           placeholder='search for product'
-          className={`pl-[50px] p-[14px] bg-[#EFF0F4] border placeholder:text-[#112025] opacity-50 text-[16px] font-semibold ${inputClass}`}
+          className={`pl-[50px] p-3.5 bg-[#EFF0F4] border placeholder:text-[#112025] opacity-50 text-base font-semibold ${inputClass}`}
         />
         <img
           src='/images/search.png'
@@ -65,7 +65,7 @@ const Header = () => {
           {sliderData.map((item, index) => (
             <div
               key={index}
-              className='text-center font-semibold text-[8px] lg:text-[14px] text-[#EFF0F4] my-1'
+              className='text-center font-semibold text-[8px] lg:text-sm text-[#EFF0F4] my-1'
             >
               {item.text}
             </div>
@@ -80,19 +80,11 @@ const Header = () => {
             <div className='flex gap-5'>
               <span className='flex items-center gap-2 text-[22px] font-semibold'>
                 Pets Food
-                <img
-                  src='/images/arrowDown.png'
-                  alt=''
-                  className='w-3 h-2.5'
-                />
+                <img src='/images/arrowDown.png' alt='' className='w-3 h-2.5' />
               </span>
               <span className='flex items-center gap-2 text-[22px] font-semibold'>
                 Accessories
-                <img
-                  src='/images/arrowDown.png'
-                  alt=''
-                  className='w-3 h-2.5'
-                />
+                <img src='/images/arrowDown.png' alt='' className='w-3 h-2.5' />
               </span>
             </div>
           </div>

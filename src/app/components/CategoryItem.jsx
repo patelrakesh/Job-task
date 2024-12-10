@@ -44,36 +44,36 @@ const CategoryItem = () => {
 
   const OrderNowButton = ({ btnClass }) => (
     <button
-      className={`bg-[#112025] text-white py-[9px] px-[18px] font-semibold text-[14px] ${btnClass}`}
+      className={`bg-[#112025] text-white py-[9px] px-[18px] font-semibold text-sm ${btnClass}`}
     >
       Order Now
     </button>
   );
 
   const AccessoriesFoodComboCard = () => (
-    <div className="flex flex-col items-start gap-5 bg-[url('/images/dog-food-and-leash.png')] w-full h-full min-h-[290px] lg:min-h-[540px] bg-cover p-5 rounded-[8px]">
+    <div className="flex flex-col items-start gap-5 bg-[url('/images/dog-food-and-leash.png')] w-full h-full min-h-[290px] lg:min-h-[540px] bg-cover p-5 rounded-lg">
       <div className='flex flex-col gap-2.5'>
-        <span className='font-medium text-[12px] text-[#112025]'>
+        <span className='font-medium text-xs text-[#112025]'>
           Accessories + Food Combo
         </span>
-        <span className='font-semibold text-[16px] text-[#112025] max-w-[150px] capitalize'>
+        <span className='font-semibold text-base text-[#112025] max-w-[150px] capitalize'>
           Ofcourse we sale product with love
         </span>
       </div>
-      <OrderNowButton btnClass='rounded-[8px]' />
+      <OrderNowButton btnClass='rounded-lg' />
     </div>
   );
 
   const PeanutButterCookiesCard = () => (
-    <div className='w-full bg-[#FDC161] rounded-[8px] flex flex-col justify-center items-center text-center pt-5 min-h-[290px] lg:min-h-[500px]'>
+    <div className='w-full bg-[#FDC161] rounded-lg flex flex-col justify-center items-center text-center pt-5 min-h-[290px] lg:min-h-[500px]'>
       <div className='flex flex-col gap-2.5 items-center'>
-        <span className='font-semibold text-[16px] text-[#112025] capitalize max-w-[150px]'>
+        <span className='font-semibold text-base text-[#112025] capitalize max-w-[150px]'>
           peanut butter cookies
         </span>
-        <span className='font-medium text-[12px] text-[#112025] max-w-[180px]'>
+        <span className='font-medium text-xs text-[#112025] max-w-[180px]'>
           Lectus commodo pharetra, sit aliquam tristique neque in.
         </span>
-        <OrderNowButton btnClass='rounded-[8px]' />
+        <OrderNowButton btnClass='rounded-lg' />
       </div>
       <img
         src='/images/peanut-butter.png'
@@ -84,13 +84,13 @@ const CategoryItem = () => {
   );
 
   const ChocolateIngidriantCard = ({ mainDivClass, image }) => (
-    <div className={`flex rounded-[8px] ${mainDivClass}`}>
+    <div className={`flex rounded-lg ${mainDivClass}`}>
       <div className='flex flex-col items-start gap-5 p-5 '>
         <div className='flex flex-col gap-2.5'>
-          <span className='font-medium text-[12px] text-[#112025]'>
+          <span className='font-medium text-xs text-[#112025]'>
             Axel & blue
           </span>
-          <span className='font-semibold text-[16px] text-[#112025] max-w-[200px] capitalize'>
+          <span className='font-semibold text-base text-[#112025] max-w-[200px] capitalize'>
             Made from the real chocolate ingidriant
           </span>
         </div>
@@ -148,10 +148,10 @@ const CategoryItem = () => {
   return (
     <div className='mx-0 lg:mx-20 flex justify-center items-center flex-col gap-5 py-10'>
       <div className='flex flex-col items-center justify-center text-center gap-2.5 max-w-full lg:max-w-[450px] !text-[#112025]'>
-        <span className='text-[10px] lg:text-[16px] font-medium uppercase opacity-50'>
+        <span className='text-[10px] lg:text-base font-medium uppercase opacity-50'>
           based on veterinary doctor's
         </span>
-        <span className='text-[16px] lg:text-[30px] font-medium mx-8 lg:mx-0'>
+        <span className='text-base lg:text-3xl font-medium mx-8 lg:mx-0'>
           some of our favorites to care for their whole health
         </span>
       </div>
@@ -161,7 +161,7 @@ const CategoryItem = () => {
           {tabData.map((tab, index) => (
             <button
               key={index}
-              className={`flex flex-col lg:flex-row items-center justify-center gap-1.5 lg:gap-2.5 py-2 px-6 lg:px-4 text-[10px] lg:text-[16px] font-medium focus:outline-none uppercase rounded-[24px] lg:rounded-full ${
+              className={`flex flex-col lg:flex-row items-center justify-center gap-1.5 lg:gap-2.5 py-2 px-6 lg:px-4 text-[10px] lg:text-base font-medium focus:outline-none uppercase rounded-3xl lg:rounded-full ${
                 activeTab === index
                   ? 'text-white bg-[#112025]'
                   : 'bg-[#EFF0F4] lg:bg-white'
