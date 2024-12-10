@@ -44,3 +44,57 @@ ul, ol {
   font-size: 1rem;
   color: #112025;
 }
+
+.scrollbar_manual {
+  overflow-x: scroll;
+  margin-top: 20px;
+}
+
+.scrollbar_manual::-webkit-scrollbar {
+  height: 4px;
+}
+
+.scrollbar_manual::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-bottom: 1px solid #E0E0E0;
+  border-radius: 8px;
+}
+
+.scrollbar_manual::-webkit-scrollbar-thumb {
+  background-color: #18bcc4;
+  border-radius: 8px;
+  height: 4px;
+}
+
+.scrollbar_manual:hover::-webkit-scrollbar-thumb {
+  background-color: #14a1ac;
+}
+
+@media (min-width: 1360px) and (max-width: 1370px) {
+  .explore_now_section{
+    height: 488px !important;
+  }
+  .explore_desc{
+  padding-left: 3rem !important;
+  }
+}
+
+@media (min-width: 820px ) and (max-width: 1180px) {
+  .explore_now_section{
+    height: 397px !important;
+  }
+  .explore_desc{
+    margin-top: 6rem !important;
+    padding-left: 3.25rem !important;
+  }
+}
+
+@media (min-width: 768px ) and (max-width: 1024px) {
+  .explore_now_section{
+    height: 361px !important;
+  }
+  .explore_desc{
+    margin-top: 4rem !important;
+    padding-left: 4.25rem !important;
+  }
+}
