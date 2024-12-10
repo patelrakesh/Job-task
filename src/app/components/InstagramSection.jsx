@@ -81,17 +81,17 @@ const InstagramSection = () => {
               >
                 {/* First Card */}
                 <div className="bg-white shadow-sm rounded-md overflow-hidden hover:shadow-lg hover:border hover:border-slate-300 hover:bg-slate-50 transition-all duration-300">
-                  <div className="bg-[#16BAC6] bg-opacity-10 flex flex-col justify-center items-center text-center p-6 h-40 rounded-md shadow-sm">
+                  <div className="bg-[#16BAC6] bg-opacity-10 flex flex-col justify-center items-center text-center p-6 rounded-md shadow-sm">
                     {post.icon && (
                       <Image
                         src={post.icon}
                         alt="Heart Icon"
                         width={24}
                         height={24}
-                        className="mb-2"
+                        className="mb-2 mt-4"
                       />
                     )}
-                    <p className="text-[#195F6B] font-semibold md:text-[17px] text-[14px] mb-4 font-poppins">
+                    <p className="text-[#195F6B] font-semibold md:text-[19px] text-[17px] mb-4 font-poppins">
                       {`"${post.text}"`}
                     </p>
                   </div>
