@@ -75,13 +75,13 @@ const HeroSection = () => {
               key={index}
               className='!flex !flex-col !gap-1.5 md:!gap-2.5 items-start text-[#112025] mb-10 pt-5 md:pt-0'
             >
-              <h1 className='text-[18px] md:text-[36px] font-bold max-w-[250px] md:max-w-[400px]'>
+              <h1 className='text-lg md:text-4xl font-bold max-w-[250px] md:max-w-[400px]'>
                 {item.title}
               </h1>
-              <span className=' text-[10px] md:text-[14px] font-normal max-w-[200px] md:max-w-[300px]'>
+              <span className=' text-[10px] md:text-sm font-normal max-w-[200px] md:max-w-[300px]'>
                 {item.content}
               </span>
-              <button className='px-[18px] md:px-[36px] py-[9px] md:py-[18px] bg-[#112025] text-white rounded-full font-medium text-[10px] md:text-[16px] uppercase md:mt-5'>
+              <button className='px-[18px] md:px-9 py-[9px] md:py-[18px] bg-[#112025] text-white rounded-full font-medium text-[10px] md:text-base uppercase md:mt-5'>
                 {item.btnText}
               </button>
             </div>
