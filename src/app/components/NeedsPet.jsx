@@ -11,17 +11,17 @@ const NeedsPet = () => {
       btnClass: '!border-black',
     },
     {
-      img: '/images/Mask-Group.png',
+      img: '/images/bright-parrot-on-branch.png',
       btnText: 'BIRDS LOVER',
       btnClass: '!text-white !border-white',
     },
     {
-      img: '/images/Mask-Group.png',
+      img: '/images/dog-toys-and-food-bowl-background.png',
       btnText: 'PET ACCESORIES',
       btnClass: '!border-black',
     },
     {
-      img: '/images/Mask-Group.png',
+      img: '/images/mouse.png',
       btnText: 'HEMI & RAT TA TAT',
       btnClass: '',
     },
@@ -31,7 +31,7 @@ const NeedsPet = () => {
       btnClass: '!border-black',
     },
     {
-      img: '/images/Mask-Group.png',
+      img: '/images/cat-with-plants.png',
       btnText: 'MEOW MEOW',
       btnClass: '!text-white !border-white',
     },

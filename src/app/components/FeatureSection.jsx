@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 const FeaturesSection = () => {
@@ -28,7 +27,7 @@ const FeaturesSection = () => {
 
   const FeatureCard = ({ icon, title, description, iconSize }) => {
     return (
-      <div className="flex flex-col items-start bg-white bg-opacity-80 shadow-lg rounded-lg p-6 text-left backdrop-blur-sm hover:shadow-2xl transition-shadow duration-300 ease-in-out w-[375px] h-[245px] flex-shrink-0 sm:w-[392px]">
+      <div className="flex flex-col items-start bg-white bg-opacity-80 shadow-lg rounded-lg p-6 text-left backdrop-blur-sm hover:shadow-2xl transition-shadow duration-300 ease-in-out w-[295px] h-[245px] flex-shrink-0 sm:w-[320px] md:w-[320px] lg:w-[310px] xl:w-[380px]">
         <div className="bg-white w-[2.5rem] h-[2.5rem] flex items-center justify-center mb-2 rounded-md shadow-sm">
           <Image
             src={icon}
@@ -39,29 +38,25 @@ const FeaturesSection = () => {
           />
         </div>
 
-        <h3 className="text-lg font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm sm:text-sm md:text-[1.1rem]">{description}</p>
+        <h3 className="md:text-[20px] text-[14px] font-semibold mb-2 mt-2">{title}</h3>
+        <p className="text-[#666666] text-[12px] md:text-[16px] font-poppins tracking-[2%]">
+          {description}
+        </p>
       </div>
     );
   };
 
   return (
-    <div className="relative w-full h-auto py-12">
+    <div className="relative w-full h-auto py-12 bg-[url('/images/card-background.png')] bg-cover bg-center">
       {/* Background */}
-      <div className="absolute inset-0 bg-[#d1eff2] bg-opacity-60"></div>
-      <div className="absolute inset-0">
-        <Image
-          src="/images/card-background.png"
-          alt="Background Pattern"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0"
-        />
-      </div>
+
+      {/* Solid Color Fallback */}
+      <div className="absolute inset-0 bg-[#dbeded] bg-opacity-100 -z-20"></div>
 
       {/* Card Container */}
       <div className="relative container mx-auto px-4">
-        <div className="flex gap-4 overflow-x-auto sm:overflow-visible sm:flex-wrap lg:justify-center">
+        {/* Horizontal Scroll for Mobile and Tablet */}
+        <div className="flex gap-4 overflow-x-auto sm:overflow-x-auto md:overflow-x-auto lg:overflow-hidden sm:scroll-smooth lg:justify-center sm:flex-nowrap lg:flex-wrap">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
