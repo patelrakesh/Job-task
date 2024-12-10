@@ -62,7 +62,7 @@ const InstagramSection = () => {
 
   return (
     <div className="p-5 bg-gray-50">
-    <div className="max-w-screen-xl mx-auto pt-[6rem] pb-[4rem]">
+    <div className="max-w-screen-xl mx-auto pt-[4rem] pb-[2rem]">
       <h2 className="text-center md:text-[30px] text-[16px] font-bold mb-4">Explore #Dubidoo</h2>
       <p className="text-[#112025] text-[12px] md:text-[14px]  mb-4 font-poppins text-center max-w-[450px] mx-auto">
         {boldAtUsernames(
