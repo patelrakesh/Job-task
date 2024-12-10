@@ -27,7 +27,7 @@ const FeaturesSection = () => {
 
   const FeatureCard = ({ icon, title, description, iconSize }) => {
     return (
-      <div className="flex flex-col items-start bg-white bg-opacity-80 shadow-lg rounded-lg p-6 text-left backdrop-blur-sm hover:shadow-2xl transition-shadow duration-300 ease-in-out w-[295px] h-[245px] flex-shrink-0 sm:w-[320px] md:w-[320px] lg:w-[310px] xl:w-[380px]">
+      <div className="flex flex-col items-start bg-white bg-opacity-80 shadow-lg rounded-lg p-6 text-left backdrop-blur-sm hover:shadow-2xl transition-shadow duration-300 ease-in-out w-[295px] md:h-[245px] flex-shrink-0  lg:w-[310px] xl:w-[380px]">
         <div className="bg-white w-[2.5rem] h-[2.5rem] flex items-center justify-center mb-2 rounded-md shadow-sm">
           <Image
             src={icon}
