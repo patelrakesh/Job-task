@@ -11,8 +11,8 @@ const StayConnected = () => {
 
   return (
     <>
-      <div className='flex gap-2.5 bg-[#EFF0F4] mx-5 lg:mx-40 p-5 lg:py-10 lg:px-20 rounded-[20px] relative'>
-        <div className='flex flex-col gap-5 max-w-full lg:max-w-[45%] pb-[280px] lg:pb-40'>
+      <div className='flex gap-2.5 bg-[#EFF0F4] max-w-screen-xl mx-5 lg:mx-auto p-5 xl:py-10 lg:px-20 rounded-[20px] relative'>
+        <div className='flex flex-col gap-5 max-w-full lg:max-w-[45%] pb-[280px] xl:pb-40'>
           <div className='flex flex-col gap-2.5'>
             <span className='font-medium text-3xl text-black'>
               Stay connected with us.
@@ -45,7 +45,7 @@ const StayConnected = () => {
             ))}
           </div>
 
-          <div className='relative max-w-full lg:max-w-[70%]'>
+          <div className='relative max-w-full xl:max-w-[70%]'>
             <input
               type='text'
               placeholder='Signup for Newsletter'
@@ -59,7 +59,7 @@ const StayConnected = () => {
         <img
           src='/images/pet.png'
           alt=''
-          className='absolute bottom-20 lg:bottom-0 right-5 md:right-20 lg:right-10 w-[200px] h-[200px] lg:w-auto lg:h-auto'
+          className='absolute bottom-20 lg:bottom-0 right-5 md:right-20 xl:right-10 w-[200px] h-[200px] lg:w-auto lg:h-auto'
         />
       </div>
     </>
