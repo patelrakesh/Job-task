@@ -80,7 +80,9 @@ const NeedsPet = () => {
               <React.Fragment key={index}>
                 <div
                   style={{ backgroundImage: `url(${item.img})` }}
-                  className={`text-center bg-center bg-cover w-full h-[300px] md:h-[500px] overflow-hidden p-5 !rounded-lg transition-transform duration-500 transform ${item.imgDivClass} ${
+                  className={`text-center bg-center bg-cover w-full h-[300px] md:h-[500px] overflow-hidden p-5 !rounded-lg transition-transform duration-500 transform ${
+                    item.imgDivClass
+                  } ${
                     index === activeSlide ? 'scale-105' : 'scale-90 blur-[2px]'
                   }`}
                 >
