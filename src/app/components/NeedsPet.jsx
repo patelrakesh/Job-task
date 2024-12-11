@@ -18,12 +18,13 @@ const NeedsPet = () => {
     {
       img: '/images/dog-toys-and-food-bowl-background.png',
       btnText: 'PET ACCESORIES',
-      btnClass: '!border-black',
+      btnClass: '!border-black ',
+      imgDivClass: 'flex justify-center items-center',
     },
     {
       img: '/images/mouse.png',
       btnText: 'HEMI & RAT TA TAT',
-      btnClass: '',
+      btnClass: '!border-black',
     },
     {
       img: '/images/Mask-Group.png',
@@ -79,7 +80,7 @@ const NeedsPet = () => {
               <React.Fragment key={index}>
                 <div
                   style={{ backgroundImage: `url(${item.img})` }}
-                  className={`text-center bg-center bg-cover w-full h-[300px] md:h-[500px] overflow-hidden p-5 rounded-lg transition-transform duration-500 transform ${
+                  className={`text-center bg-center bg-cover w-full h-[300px] md:h-[500px] overflow-hidden p-5 !rounded-lg transition-transform duration-500 transform ${item.imgDivClass} ${
                     index === activeSlide ? 'scale-105' : 'scale-90 blur-[2px]'
                   }`}
                 >
