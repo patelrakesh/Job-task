@@ -6,7 +6,7 @@ const ExploreSection = () => {
     <section className="max-w-8xl mx-auto py-10 px-5 lg:px-10 mt-8 bg-white">
       <div
         className="explore_now_section relative w-full lg:h-[430px] xl:h-[550px] xxl:h-[700px] bg-cover bg-center lg:block hidden"
-        style={{ backgroundImage: "url('/images/ExplorePetFood.png')" }}
+        style={{ backgroundImage: "url('/images/Explore-Pet-Food.png')" }}
       >
         <div className="flex items-start justify-end w-full h-full lg:pr-16">
           <div className="explore_desc max-w-sm xl:max-w-lg text-left space-y-6 lg:mt-36 xl:mt-28 pl-5">
@@ -25,7 +25,7 @@ const ExploreSection = () => {
 
       <div className="flex justify-center items-center flex-col lg:hidden">
         <Image
-          src="/images/premium-organic-dog-food-banner.png"
+          src="/images/premium-organic-dog-food-desktop-banner.png"
           alt="premium organic dog food banner"
           className="rounded-lg object-cover w-[348px] h-[250px]"
           width={328}

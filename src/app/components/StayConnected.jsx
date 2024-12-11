@@ -57,7 +57,7 @@ const StayConnected = () => {
           </div>
         </div>
         <img
-          src='/images/pet.png'
+          src='/images/white-dog.png'
           alt=''
           className='absolute bottom-20 lg:bottom-0 right-5 md:right-20 lg:right-10 w-[200px] h-[200px] lg:w-auto lg:h-auto'
         />

@@ -6,32 +6,32 @@ const NeedsPet = () => {
 
   const sliderData = [
     {
-      img: '/images/Mask-Group.png',
+      img: '/images/black-and-white-dog.png',
       btnText: 'FOR DOGS & DOGS LOVER',
       btnClass: '!border-black',
     },
     {
-      img: '/images/bright-parrot-on-branch.png',
+      img: '/images/bright-parrot-perch.png',
       btnText: 'BIRDS LOVER',
       btnClass: '!text-white !border-white',
     },
     {
-      img: '/images/dog-toys-and-food-bowl-background.png',
+      img: '/images/dog-toys-and-food-background.png',
       btnText: 'PET ACCESORIES',
       btnClass: '!border-black',
     },
     {
-      img: '/images/mouse.png',
+      img: '/images/mouse-icon.png',
       btnText: 'HEMI & RAT TA TAT',
       btnClass: '',
     },
     {
-      img: '/images/Mask-Group.png',
+      img: '/images/black-and-white-dog.png',
       btnText: 'FOR NEW BORN',
       btnClass: '!border-black',
     },
     {
-      img: '/images/cat-with-plants.png',
+      img: '/images/kitty-in-nature.png',
       btnText: 'MEOW MEOW',
       btnClass: '!text-white !border-white',
     },
@@ -67,7 +67,7 @@ const NeedsPet = () => {
         </div>
         <span className='flex items-center gap-2.5 font-medium text-[16px] text-[#112025] opacity-50'>
           view all products
-          <img src='/images/thin_long_right.png' alt='' />
+          <img src='/images/thin_long_right-icon.png' alt='' />
         </span>
       </div>
 

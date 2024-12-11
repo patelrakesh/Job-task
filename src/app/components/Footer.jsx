@@ -22,10 +22,10 @@ const Footer = () => {
   ];
 
   const socialMedia = [
-    { img: '/images/facebook-icon.png' },
-    { img: '/images/twitter-icon.png' },
+    { img: '/images/facebook-small-icon.png' },
+    { img: '/images/instagram-black-icon.png' },
     { img: '/images/instagram-icon.png' },
-    { img: '/images/linkedin-icon.png' },
+    { img: '/images/linkedin.png' },
   ];
 
   const Test = ({ mainDivClass }) => (
@@ -44,10 +44,10 @@ const Footer = () => {
 
   return (
     <>
-      <div className="hidden absolute bottom-[-430px] bg-[url('/images/footerbg.png')] pt-[100px] bg-no-repeat bg-cover bg-center lg:block">
+      <div className="hidden absolute bottom-[-430px] bg-[url('/images/white-footer-desktop-bg.png')] pt-[100px] bg-no-repeat bg-cover bg-center lg:block">
         <div className='px-20 py-12 flex justify-between items-start'>
           <div className='flex flex-col gap-4 w-1/4'>
-            <img src='/images/Logo.png' className='w-[250px]' />
+            <img src='/images/dubidoo.png' className='w-[250px]' />
             <span className='text-[#195F6B] font-medium text-xs'>
               © 2021 PetStore. All Rights Reserved.
             </span>
@@ -57,11 +57,11 @@ const Footer = () => {
               purus volutpat
             </span>
             <div className='flex items-center gap-2.5 font-semibold text-base'>
-              <img src='/images/mail.png' alt='' className='w-5 h-4' />
+              <img src='/images/mail-icon.png' alt='' className='w-5 h-4' />
               <span>sayhi@dubidoo.com</span>
             </div>
             <div className='flex gap-2.5 text-base'>
-              <img src='/images/phone.png' alt='' className='w-5 h-4' />
+              <img src='/images/phone-icon.png' alt='' className='w-5 h-4' />
               <span>(252) 555-0126</span>
             </div>
           </div>
@@ -103,10 +103,10 @@ const Footer = () => {
         <Test mainDivClass='text-xs' />
       </div>
 
-      <div className="block lg:hidden absolute bottom-[-330px] md:bottom-[-360px] w-full bg-[url('/images/footer-mobile-bg.png')] pt-[100px] md:pt-[150px] bg-no-repeat bg-cover ">
+      <div className="block lg:hidden absolute bottom-[-330px] md:bottom-[-360px] w-full bg-[url('/images/white-footer-mobile-bg.png')] pt-[100px] md:pt-[150px] bg-no-repeat bg-cover ">
         <div className='px-5 flex flex-col gap-5'>
           <div className='flex flex-col gap-2.5'>
-            <img src='/images/Logo.png' className='w-[120px]' />
+            <img src='/images/dubidoo.png' className='w-[120px]' />
             <span className='text-[#195F6B] font-medium text-[8px]'>
               © 2021 PetStore. All Rights Reserved.
             </span>
@@ -136,7 +136,7 @@ const Footer = () => {
                 {showServices ? (
                   '-'
                 ) : (
-                  <img src='/images/plus.png' className='w-2.5 h-2.5' />
+                  <img src='/images/plus-icon.png' className='w-2.5 h-2.5' />
                 )}
               </span>
             </button>
@@ -162,7 +162,7 @@ const Footer = () => {
                 {showPetFood ? (
                   '-'
                 ) : (
-                  <img src='/images/plus.png' className='w-2.5 h-2.5' />
+                  <img src='/images/plus-icon.png' className='w-2.5 h-2.5' />
                 )}
               </span>
             </button>
@@ -181,12 +181,12 @@ const Footer = () => {
           </div>
           <div className='flex justify-center gap-5 pb-5'>
             <div className='flex gap-2.5 font-medium text-[10px]'>
-              <img src='/images/mail.png' alt='' />
+              <img src='/images/mail-icon.png' alt='' />
               <span>sayhi@dubidoo.com</span>
             </div>
             <div className='w-0.5 bg-black' />
             <div className='flex gap-2.5 font-medium text-[10px]'>
-              <img src='/images/phone.png' alt='' />
+              <img src='/images/phone-icon.png' alt='' />
               <span>(252) 555-0126</span>
             </div>
           </div>

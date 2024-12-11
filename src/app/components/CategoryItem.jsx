@@ -51,7 +51,7 @@ const CategoryItem = () => {
   );
 
   const AccessoriesFoodComboCard = () => (
-    <div className="flex flex-col items-start gap-5 bg-[url('/images/dog-food-and-leash.png')] w-full h-full min-h-[290px] lg:min-h-[540px] bg-cover p-5 rounded-lg">
+    <div className="flex flex-col items-start gap-5 bg-[url('/images/dog-food-leash.png')] w-full h-full min-h-[290px] lg:min-h-[540px] bg-cover p-5 rounded-lg">
       <div className='flex flex-col gap-2.5'>
         <span className='font-medium text-xs text-[#112025]'>
           Accessories + Food Combo
@@ -76,7 +76,7 @@ const CategoryItem = () => {
         <OrderNowButton btnClass='rounded-lg' />
       </div>
       <img
-        src='/images/peanut-butter.png'
+        src='/images/peanut-butter-cookies.png'
         alt=''
         className='h-[120px] lg:h-[330px]'
       />
@@ -108,11 +108,11 @@ const CategoryItem = () => {
         <div className='w-full flex flex-col gap-2.5'>
           <ChocolateIngidriantCard
             mainDivClass='bg-white border border-solid border-[#D5EFF9]'
-            image='/images/orderNow.png'
+            image='/images/vegetable-and-meat.png'
           />
           <ChocolateIngidriantCard
             mainDivClass='bg-[#D5EFF9]'
-            image='/images/ellen-and-co-peanut-butter-treats.png'
+            image='/images/ellen-and-co-peanut-pet-food.png'
           />
         </div>
       </div>
@@ -122,11 +122,11 @@ const CategoryItem = () => {
           <PeanutButterCookiesCard />
           <ChocolateIngidriantCard
             mainDivClass='bg-white border border-solid border-[#D5EFF9]'
-            image='/images/orderNow.png'
+            image='/images/vegetable-and-meat.png'
           />
           <ChocolateIngidriantCard
             mainDivClass='bg-[#D5EFF9]'
-            image='/images/ellen-and-co-peanut-butter-treats.png'
+            image='/images/ellen-and-co-peanut-pet-food.png'
           />
         </Slider>
       </div>

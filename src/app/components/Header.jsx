@@ -10,7 +10,7 @@ const Header = () => {
         className={`${className}`}
         onClick={onClick}
       >
-        <img src='/images/right-arrow.png' alt='Next' />
+        <img src='/images/right-arrow-icon.png' alt='Next' />
       </div>
     );
   }
@@ -22,7 +22,7 @@ const Header = () => {
         className={`${className}`}
         onClick={onClick}
       >
-        <img src='/images/left-arrow.png' alt='Previous' />
+        <img src='/images/left-small-arrow.png' alt='Previous' />
       </div>
     );
   }
@@ -45,7 +45,7 @@ const Header = () => {
           className={`pl-[50px] p-3.5 bg-[#EFF0F4] border placeholder:text-[#112025] opacity-50 text-base font-semibold ${inputClass}`}
         />
         <img
-          src='/images/search.png'
+          src='/images/search-icon.png'
           className='text-white absolute top-3 left-2.5'
         />
       </div>
@@ -76,28 +76,28 @@ const Header = () => {
       <div className='hidden lg:block bg-[#FAFFFF] justify-between '>
         <div className='flex justify-between items-center mx-20 py-5'>
           <div className='flex items-center gap-10'>
-            <img src='/images/Logo.png' />
+            <img src='/images/dubidoo.png' />
             <div className='flex gap-5'>
               <span className='flex items-center gap-2 text-[22px] font-semibold'>
                 Pets Food
-                <img src='/images/arrowDown.png' alt='' className='w-3 h-2.5' />
+                <img src='/images/arrow-Down.png' alt='' className='w-3 h-2.5' />
               </span>
               <span className='flex items-center gap-2 text-[22px] font-semibold'>
                 Accessories
-                <img src='/images/arrowDown.png' alt='' className='w-3 h-2.5' />
+                <img src='/images/arrow-Down.png' alt='' className='w-3 h-2.5' />
               </span>
             </div>
           </div>
           <div className='flex items-center gap-2.5'>
             <SearchInput inputClass='rounded-lg' />
             <div className='p-2.5 bg-[#EFF0F4] rounded-full relative'>
-              <img src='/images/wishlist.png' className='w-4 text-white' />
+              <img src='/images/wishlist-icon.png' className='w-4 text-white' />
             </div>
             <div className='p-2.5 bg-[#EFF0F4] rounded-full relative'>
-              <img src='/images/user.png' className='w-4 text-white' />
+              <img src='/images/user-icon.png' className='w-4 text-white' />
             </div>
             <div className='p-2.5 bg-[#EFF0F4] rounded-full relative'>
-              <img src='/images/cart.png' className='w-3.5 text-white' />
+              <img src='/images/cart-data.png' className='w-3.5 text-white' />
               <div className='bg-[#FDC161] absolute top-0 right-0 rounded-full px-1 text-[10px]'>
                 1
               </div>
@@ -108,10 +108,10 @@ const Header = () => {
 
       <div className='flex lg:hidden flex-col items-center p-5 gap-5 bg-[#FAFFFF]'>
         <div className='w-full flex justify-between items-center'>
-          <img src='/images/user.png' className='w-4 text-white' />
-          <img src='/images/Logo.png' />
+          <img src='/images/user-icon.png' className='w-4 text-white' />
+          <img src='/images/dubidoo.png' />
           <div className='p-2.5 rounded-full relative'>
-            <img src='/images/cart.png' className='w-3.5 text-white' />
+            <img src='/images/cart-data.png' className='w-3.5 text-white' />
             <div className='bg-[#FDC161] absolute top-0 right-0 rounded-full px-1 text-[10px]'>
               1
             </div>

@@ -67,7 +67,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="bg-[url('/images/hero-section-mobile.png')] md:bg-[url('/images/hero-section.png')] bg-center bg-cover h-full md:h-screen px-5 md:px-20 flex items-center">
+    <div className="bg-[url('/images/hero-food-section-mobile.png')] md:bg-[url('/images/hero-food-section-desktop.png')] bg-center bg-cover h-full md:h-screen px-5 md:px-20 flex items-center">
       <div className='slider-container overflow-hidden hero-section-slider-div '>
         <Slider {...settings}>
           {sliderData.map((item, index) => (

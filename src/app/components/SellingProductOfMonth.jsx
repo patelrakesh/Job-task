@@ -22,7 +22,7 @@ const SellingProductOfMonth = () => {
           >
             View All Product{" "}
             <Image
-              src="/images/coolicon.png"
+              src="/images/arrow.png"
               width={20}
               height={7}
               alt="Right arrow"

@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "productImg": "/images/ActivePetFood.png",
+      "productImg": "/images/active-dog-adult-food.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "productImg": "/images/VegDishFood.png",
+      "productImg": "/images/VegDishFood2.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "productImg": "/images/ellen&CoFood.png",
+      "productImg": "/images/ellen&CoPetFood.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -28,7 +28,7 @@
     },
     {
       "id": 4,
-      "productImg": "/images/petFood.png",
+      "productImg": "/images/Merrick-pet-Food.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "productImg": "/images/rawBiscuit.png",
+      "productImg": "/images/raw-biscuit.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "productImg": "/images/ellen&CoFood.png",
+      "productImg": "/images/ellen&CoPetFood.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -55,7 +55,7 @@
     },
     {
       "id": 7,
-      "productImg": "/images/ActivePetFood.png",
+      "productImg": "/images/active-dog-adult-food.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -64,7 +64,7 @@
     },
     {
       "id": 8,
-      "productImg": "/images/VegDishFood.png",
+      "productImg": "/images/VegDishFood2.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -73,7 +73,7 @@
     },
     {
       "id": 9,
-      "productImg": "/images/ellen&CoFood.png",
+      "productImg": "/images/ellen&CoPetFood.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -82,7 +82,7 @@
     },
     {
       "id": 10,
-      "productImg": "/images/petFood.png",
+      "productImg": "/images/Merrick-pet-Food.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -91,7 +91,7 @@
     },
     {
       "id": 11,
-      "productImg": "/images/rawBiscuit.png",
+      "productImg": "/images/raw-biscuit.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",
@@ -100,7 +100,7 @@
     },
     {
       "id": 12,
-      "productImg": "/images/ellen&CoFood.png",
+      "productImg": "/images/ellen&CoPetFood.png",
       "info": "Homestead Turkey & Ancient Grains Dry Dog Food",
       "latestPrice": "$35.99",
       "oldPrice": "$42.99",

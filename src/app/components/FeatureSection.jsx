@@ -17,7 +17,7 @@ const FeaturesSection = () => {
       iconSize: { width: 25, height: 25 },
     },
     {
-      icon: "/images/Product@2x.png",
+      icon: "/images/cube-icon.png",
       title: "Flexible Delivery",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultrices turpis proin nulla.",
