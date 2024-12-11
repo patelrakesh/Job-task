@@ -2,13 +2,13 @@
 import Header from "./components/Header";
 import HeroSection from './components/HeroSection';
 import CategoryItem from './components/CategoryItem';
-import StayConnected from "./components/StayConnected";
+import ExploreSection from './components/ExploreSection';
 import NeedsPet from './components/NeedsPet';
-import Footer from "./components/Footer";
-import ExploreSection from "./components/ExploreSection";
-import SellingProductOfMonth from "./components/SellingProductOfMonth";
+import SellingProductOfMonth from './components/SellingProductOfMonth';
 import FeaturesSection from "./components/FeatureSection";
 import InstagramSection from "./components/InstagramSection";
+import StayConnected from "./components/StayConnected";
+import Footer from "./components/Footer";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 

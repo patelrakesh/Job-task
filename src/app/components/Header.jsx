@@ -2,30 +2,23 @@ import React from 'react';
 import Slider from 'react-slick';
 
 const Header = () => {
-
   const NextArrow = (props) => {
     const { className, onClick } = props;
     return (
-      <div
-        className={`${className}`}
-        onClick={onClick}
-      >
+      <div className={`${className}`} onClick={onClick}>
         <img src='/images/right-arrow-icon.png' alt='Next' />
       </div>
     );
-  }
+  };
 
   const PrevArrow = (props) => {
     const { className, onClick } = props;
     return (
-      <div
-        className={`${className}`}
-        onClick={onClick}
-      >
+      <div className={`${className}`} onClick={onClick}>
         <img src='/images/left-small-arrow.png' alt='Previous' />
       </div>
     );
-  }
+  };
 
   const settings = {
     dots: false,
@@ -80,11 +73,19 @@ const Header = () => {
             <div className='flex gap-5'>
               <span className='flex items-center gap-2 text-[22px] font-semibold'>
                 Pets Food
-                <img src='/images/arrow-Down.png' alt='' className='w-3 h-2.5' />
+                <img
+                  src='/images/arrow-Down.png'
+                  alt=''
+                  className='w-3 h-2.5'
+                />
               </span>
               <span className='flex items-center gap-2 text-[22px] font-semibold'>
                 Accessories
-                <img src='/images/arrow-Down.png' alt='' className='w-3 h-2.5' />
+                <img
+                  src='/images/arrow-Down.png'
+                  alt=''
+                  className='w-3 h-2.5'
+                />
               </span>
             </div>
           </div>
