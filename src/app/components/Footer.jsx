@@ -44,7 +44,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="hidden absolute bottom-[-430px] bg-[url('/images/white-footer-desktop-bg.png')] pt-[100px] bg-no-repeat bg-cover bg-center lg:block">
+      <div className="hidden absolute bottom-[-430px] bg-[url('/images/white-footer-desktop-bg.png')] pt-[100px] w-full bg-no-repeat bg-cover bg-center lg:block">
         <div className='px-20 py-12 flex justify-between items-start'>
           <div className='flex flex-col gap-4 w-1/4'>
             <img src='/images/dubidoo.png' className='w-[250px]' />
